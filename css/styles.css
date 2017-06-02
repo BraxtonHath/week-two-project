@@ -1,112 +1,91 @@
 /************************ HTML ****************************/
 * {
   box-sizing: border-box;
-}
-
-body {
   margin: 0;
   padding: 0;
-
-
 }
+
 /********************* NAVBAR TOP ************************/
-.navigation-top{
-  top: 0;
-  width: 100%;
 
+
+ul>li:nth-child(1){
+  background-color: #ff004b;
+  padding: 10px;
+}
+
+nav{
   background-color: #7DDFE8;
-  margin: -28px 0 0 0
-}
 
-.yo{
-  position: absolute;
-  background-color: red;
-  padding: 0% 0%;
 }
-
-.nav{
+ul{
   display: flex;
   justify-content: flex-start;
-  padding: 0 110px;
   color: white;
   list-style: none;
-  font-size: 28px;
   text-align: center;
-
+  align-content: center;
 }
 
-.nav-bar{
-  padding: 42px 0px;
-
+/*anchor tag center*/
+ul>li:not(first-child)::before{
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
 }
 
-.home-box{
-  width:
-
-
-  background-color: #00A5BF
+ul>li:nth-child(2){
+  background-color: #00A5BF;
+  width: 7%;
 }
 
-.Calender-box{
-
-
-  background-color: #00B7D3
+ul>li:nth-child(3){
+  background-color: #00B7D3;
+  width: 7%;
 }
 
-.Join-box{
-
-
+ul>li:nth-child(4){
   background-color: #00D5E7;
+  width: 7%;
 }
-/********************** NAVBAR BOTTOM ***********************/
-.bottom-nav{
-  background-color: #7DDFE8;
-  margin: -28px 0 0 0
-}
+
+/********************** NAVBAR BOTTOM **********************/
 
 .nav-bottom{
-  display: flex;
-  color: white;
-  list-style: none;
-  font-size: 28px;
-  text-align: center;
-  height: 136px;
-  padding: 0;
+  background-color: #7DDFE8;
+  height: 92px
 }
 
-.nav-bar-bottom{
-  padding-top: 50px;
-  height: 136px;
+
+.nav-bottom>li:nth-child(1){
+  background-color: #00A5BF;
+  width: 10%;
 }
 
-.home-box-bottom{
-  height: 136px;
-  width: 150px;
-  background-color: #00A5BF
+.nav-bottom>li:nth-child(2){
+  background-color: #00B7D3;
+  width: 10%;
 }
-
-.Calender-box-bottom{
-  height: 136px;
-  width: 150px;
-  background-color: #00B7D3
-}
-
-.Join-box-bottom{
-  height: 136px;
-  width: 150px;
+.nav-bottom>li:nth-child(3){
   background-color: #00D5E7;
+  width: 10%;
 }
 
-.copy-right{
-  position: absolute;
-  right: 0px;
-  padding: 35px;
+.nav-bottom>li:nth-child(4){
+  color: white;
+  width: 100%;
+  text-align: right;
+  background-color: #7DDFE8;
+
 }
+
+
 /*********************** CALENDAR ************************/
+
 .Calender-title{
-    padding: 10px 15px;
+    padding: 1% 1%;
     color: #0B1942;
-    font-size: 50px;
+    font-size: 316%;
 }
 
 .Calender{
@@ -115,15 +94,15 @@ body {
 }
 
 .June{
-  padding: 10px 15px;
-  font-size: 28px;
+  padding: 1% 1%;
+  font-size: 220%;
 }
 
 table {
   background-color: #0B1942;
   border-collapse: collapse;
   color: ;
-  font-size: 28px;
+  font-size: 220%;
   width: 100%;
 }
 td {
@@ -153,8 +132,26 @@ span{
 }
 
 /************************ JOIN ****************************/
+.title-join{
+  font-size: 250%;
+  padding: 1% 0;
+}
+.testing123{
+  display: flex;
+}
 
+.profile-pic{
+  margin: 0px -18% 0 0;
+}
 
+.input-text{
+  font-size: 100%
+}
+
+.aye{
+  border-radius: 100%;
+  margin: 20% 10%;
+}
 .sign-in-info-box{
   display: flex;
   text-align: center;
@@ -162,20 +159,29 @@ span{
   flex-wrap: wrap;
   justify-content: center;
   height: 200px;
-  width: 1360px;
 }
 
 .sign-in-info-box div{
-  width: 45%;
+  width: 50%;
   text-align: left;
 }
 
 .sign-in-info-box label{
-  font-size: 20px
+  font-size: 100%
 }
 
 .sign-in-info-box input{
   width: 90%;
   height: 30px;
+}
+
+.select{
+  display: flex
+}
+
+.select-all-1{
+  width: 30%;
+  font-size: 141%;
+  line-height: 138%;
 }
 /************************** HOME ****************************/
