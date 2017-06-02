@@ -8,7 +8,7 @@
 /********************* NAVBAR TOP ************************/
 
 
-ul>li:nth-child(1){
+.nav>li:nth-child(1){
   background-color: #ff004b;
   padding: 10px;
 }
@@ -17,7 +17,7 @@ nav{
   background-color: #7DDFE8;
 
 }
-ul{
+.nav{
   display: flex;
   justify-content: flex-start;
   color: white;
@@ -27,26 +27,26 @@ ul{
 }
 
 /*anchor tag center*/
-ul>li:not(first-child)::before{
+.nav>li:not(first-child)::before{
   content: "";
   display: inline-block;
   height: 100%;
   vertical-align: middle;
 }
 
-ul>li:nth-child(2){
+.nav>li:nth-child(2){
   background-color: #00A5BF;
-  width: 7%;
+  width: 11%;
 }
 
-ul>li:nth-child(3){
+.nav>li:nth-child(3){
   background-color: #00B7D3;
-  width: 7%;
+  width: 11%;
 }
 
-ul>li:nth-child(4){
+.nav>li:nth-child(4){
   background-color: #00D5E7;
-  width: 7%;
+  width: 11%;
 }
 
 /********************** NAVBAR BOTTOM **********************/
@@ -56,6 +56,21 @@ ul>li:nth-child(4){
   height: 92px
 }
 
+.nav-bottom{
+  display: flex;
+  justify-content: flex-start;
+  color: white;
+  list-style: none;
+  text-align: center;
+  align-content: center;
+}
+
+.nav-bottom>li:not(first-child)::before{
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
 
 .nav-bottom>li:nth-child(1){
   background-color: #00A5BF;
@@ -140,7 +155,6 @@ span{
   display: flex;
 }
 
-
 .input-text{
   font-size: 100%
 }
@@ -201,3 +215,41 @@ span{
   padding-top: 2%;
 }
 /************************** HOME ****************************/
+.index-title{
+  display: flex;
+  font-size: 160%;
+  padding: 1% 1%;
+  flex: 1 1 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.get-involved{
+  width: 100%;
+  margin: 0 1%;
+  padding: 13px 0%;
+  font-size: 153%;
+
+}
+
+.get-involved-div{
+  width: 30%;
+  line-height: 137%;
+  margin: 0px 1%;
+  font-size: 110%;
+}
+
+h2{
+  background-color: #0B1942;
+  color: white;
+  padding: 2% 2%;
+}
+
+.bottom-half{
+  background-color:#0B1942
+}
+
+.up-next{
+  color: white;
+  font-size: 110%;
+}
