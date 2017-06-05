@@ -8,46 +8,87 @@
 /********************* NAVBAR TOP ************************/
 
 
-.nav>li:nth-child(1){
+/*.nav>li:nth-child(){
   background-color: #ff004b;
   padding: 10px;
+}*/
+
+/*.yo{
+display: inline-block;
+background-color: red;
+padding: 10px;
 }
 
 nav{
   background-color: #7DDFE8;
+  }*/
 
+.navigation-top{
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 100%
 }
+
+.yo{
+  background-color: #F5005B;
+  width: 102px;
+  height: 115px;
+  padding: 10px;
+  flex: 0 1 10%;
+}
+
 .nav{
   display: flex;
+  flex-direction: row;
   justify-content: flex-start;
-  color: white;
-  list-style: none;
-  text-align: center;
-  align-content: center;
+  flex: 1 1 75%;
+  background-color: #7DDFE8;
+  align-items: center;
 }
 
+.home{
+  padding: 48px 0;
+  flex: 0 1 10%;
+  text-align: center;
+  background-color: #00A5BF;
+}
+
+.calendar-tag{
+  padding: 48px 0;
+  flex: 0 1 10%;
+  text-align: center;
+  background-color: #00B7D3;
+}
+
+.joins{
+  padding: 48px 0;
+  flex: 0 1 10%;
+  text-align: center;
+  background-color: #00D5E7;
+}
 /*anchor tag center*/
-.nav>li:not(first-child)::before{
+/*.nav>li:not(first-child)::before{
   content: "";
   display: inline-block;
   height: 100%;
   vertical-align: middle;
 }
 
-.nav>li:nth-child(2){
+.nav>li:nth-child(1){
   background-color: #00A5BF;
   width: 11%;
 }
 
-.nav>li:nth-child(3){
+.nav>li:nth-child(2){
   background-color: #00B7D3;
   width: 11%;
 }
 
-.nav>li:nth-child(4){
+.nav>li:nth-child(3){
   background-color: #00D5E7;
   width: 11%;
 }
+@media (max-width: 544px){}*/
 
 /********************** NAVBAR BOTTOM **********************/
 
@@ -74,16 +115,16 @@ nav{
 
 .nav-bottom>li:nth-child(1){
   background-color: #00A5BF;
-  width: 10%;
+  width: 16%;
 }
 
 .nav-bottom>li:nth-child(2){
   background-color: #00B7D3;
-  width: 10%;
+  width: 16%;
 }
 .nav-bottom>li:nth-child(3){
   background-color: #00D5E7;
-  width: 10%;
+  width: 16%;
 }
 
 .nav-bottom>li:nth-child(4){
@@ -146,9 +187,8 @@ span{
   padding: 10px
 }
 
-@media (width > 770px){
 
-}
+
 
 /************************ JOIN ****************************/
 .title-join{
@@ -217,6 +257,12 @@ span{
 .textarea{
   margin: 1% 1%;
   padding-top: 2%;
+}
+
+@media (max-width: 770px){
+  .sign-in-info-box div{
+    width: 100%;
+  }
 }
 /************************** HOME ****************************/
 .index-title{
@@ -319,7 +365,7 @@ h2{
   margin: 2% 3% 10% 1%
 }
 
-@media (width >770px){
+@media (max-width: 770px){
   .box-rashomon{
     flex: 1 1 100%;
   }
