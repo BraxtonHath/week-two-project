@@ -33,7 +33,7 @@
 
 .home{
   padding: 48px 0;
-  width: 100px;
+  width: 150px;
   text-align: center;
   background-color: #00A5BF;
   text-decoration: none;
@@ -42,7 +42,7 @@
 
 .calendar-tag{
   padding: 48px 0;
-  width: 100px;
+  width: 150px;
   text-align: center;
   background-color: #00B7D3;
   text-decoration: none;
@@ -51,7 +51,7 @@
 
 .joins{
   padding: 48px 0;
-  flex: 0 1 10%;
+  width: 150px;
   text-align: center;
   background-color: #00D5E7;
   text-decoration: none;
@@ -191,6 +191,10 @@ span{
 
 
 /************************ JOIN ****************************/
+form{
+  margin: 0 10px;
+}
+
 .title-join{
   font-size: 250%;
   padding: 1% 0;
@@ -247,11 +251,16 @@ span{
   color: white;
   padding: 2%;
   margin: 3% 1%;
+  height: 75px;
 }
 
 .textarea{
   margin: 1% 1%;
   padding-top: 2%;
+}
+
+.AI-BOX{
+  width: 95%;
 }
 
 @media (max-width: 770px){
