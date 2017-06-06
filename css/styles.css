@@ -8,21 +8,6 @@
 /********************* NAVBAR TOP ************************/
 
 
-/*.nav>li:nth-child(){
-  background-color: #ff004b;
-  padding: 10px;
-}*/
-
-/*.yo{
-display: inline-block;
-background-color: red;
-padding: 10px;
-}
-
-nav{
-  background-color: #7DDFE8;
-  }*/
-
 .navigation-top{
   display: flex;
   flex-direction: row;
@@ -51,6 +36,8 @@ nav{
   flex: 0 1 10%;
   text-align: center;
   background-color: #00A5BF;
+  text-decoration: none;
+  color: white;
 }
 
 .calendar-tag{
@@ -58,6 +45,8 @@ nav{
   flex: 0 1 10%;
   text-align: center;
   background-color: #00B7D3;
+  text-decoration: none;
+  color: white;
 }
 
 .joins{
@@ -65,75 +54,83 @@ nav{
   flex: 0 1 10%;
   text-align: center;
   background-color: #00D5E7;
-}
-/*anchor tag center*/
-/*.nav>li:not(first-child)::before{
-  content: "";
-  display: inline-block;
-  height: 100%;
-  vertical-align: middle;
+  text-decoration: none;
+  color: white;
 }
 
-.nav>li:nth-child(1){
-  background-color: #00A5BF;
-  width: 11%;
+@media (max-width: 544px){
+  .nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex: 1 1 75%;
+    background-color: #7DDFE8;
+  }
+
+  .home{
+    padding: 10px;
+    flex: 0 1 10%;
+    text-align: center;
+    background-color: #00A5BF;
+    width: 100%;
+  }
+
+  .calendar-tag{
+    padding: 10px;
+    flex: 0 1 10%;
+    text-align: center;
+    background-color: #00B7D3;
+    width: 100%;
+  }
+
+  .joins{
+    padding: 10px;
+    flex: 0 1 10%;
+    text-align: center;
+    background-color: #00D5E7;
+    width: 100%;
+  }
 }
 
-.nav>li:nth-child(2){
-  background-color: #00B7D3;
-  width: 11%;
-}
 
-.nav>li:nth-child(3){
-  background-color: #00D5E7;
-  width: 11%;
-}
-@media (max-width: 544px){}*/
 
 /********************** NAVBAR BOTTOM **********************/
 
-.nav-bottom{
-  background-color: #7DDFE8;
-  height: 92px
-}
-
-.nav-bottom{
-  display: flex;
-  justify-content: flex-start;
+.TM{
+  text-decoration: none;
   color: white;
-  list-style: none;
-  text-align: center;
-  align-content: center;
 }
 
-.nav-bottom>li:not(first-child)::before{
-  content: "";
-  display: inline-block;
-  height: 100%;
-  vertical-align: middle;
+@media (max-width: 544px){
+  .nav-bottom{
+    display: flex;
+    justify-content: flex-start;
+    color: white;
+    list-style: none;
+    text-align: center;
+    align-content: center;
+    flex-direction: column;
+  }
+
+  .nav-bar-bottom1{
+    background-color: #00A5BF;
+    width: 100%;
+  }
+
+  .nav-bar-bottom2{
+    background-color: #00B7D3;
+    width: 100%;
+  }
+
+  .nav-bar-bottom3{
+      background-color: #00D5E7;
+      width: 100%;
+  }
+  .TM{
+    padding:28px
+  }
 }
 
-.nav-bottom>li:nth-child(1){
-  background-color: #00A5BF;
-  width: 16%;
-}
-
-.nav-bottom>li:nth-child(2){
-  background-color: #00B7D3;
-  width: 16%;
-}
-.nav-bottom>li:nth-child(3){
-  background-color: #00D5E7;
-  width: 16%;
-}
-
-.nav-bottom>li:nth-child(4){
-  color: white;
-  width: 100%;
-  text-align: right;
-  background-color: #7DDFE8;
-
-}
 
 
 /*********************** CALENDAR ************************/
@@ -289,7 +286,7 @@ span{
   font-size: 110%;
 }
 
-h2{
+.h2{
   background-color: #0B1942;
   color: white;
   padding: 2% 2%;
@@ -381,4 +378,35 @@ h2{
   .box-rashomon ul{
     padding: 1% 5%;
   }
+
+  .get-involved-div{
+    width: 30%;
+    line-height: 137%;
+    margin: 0px 1%;
+    font-size: 89%;
+}
+
+@media (max-width: 544px){
+  .get-involved-div{
+    width: 30%;
+    line-height: 137%;
+    margin: 0px 1%;
+    font-size: 110%;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 100%;
+  }
+
+  .get-involved-paragraph{
+    padding: 30px
+  }
+
+  .four-boxes{
+    flex-direction: row;
+    flex: 1 1 100%;
+    flex-wrap: wrap;
+    font-size: 108%;
+    margin: 1% 1% 1% 1%
+  }
+
 }
