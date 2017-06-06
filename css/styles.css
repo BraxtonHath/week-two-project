@@ -19,7 +19,7 @@
   width: 102px;
   height: 115px;
   padding: 10px;
-  flex: 0 1 10%;
+  width: 100px
 }
 
 .nav{
@@ -33,7 +33,7 @@
 
 .home{
   padding: 48px 0;
-  flex: 0 1 10%;
+  width: 100px;
   text-align: center;
   background-color: #00A5BF;
   text-decoration: none;
@@ -42,7 +42,7 @@
 
 .calendar-tag{
   padding: 48px 0;
-  flex: 0 1 10%;
+  width: 100px;
   text-align: center;
   background-color: #00B7D3;
   text-decoration: none;
@@ -99,7 +99,10 @@
 .TM{
   text-decoration: none;
   color: white;
+  flex: 1 1 75%;
+  text-align: end;
 }
+
 
 @media (max-width: 544px){
   .nav-bottom{
@@ -202,7 +205,7 @@ span{
 
 .aye{
   border-radius: 100%;
-  margin: 19% 7% 8%;
+  margin: 8% 7% 8%;
 }
 .sign-in-info-box{
   display: flex;
@@ -226,24 +229,19 @@ span{
   width: 95%;
   height: 30px;
 }
-.text-select{
-  font-size: 110%;
-  margin: 0% 0 2% 0;
-}
-
 .select{
-  display: flex
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.select-all-1{
-  width: 30%;
-  font-size: 141%;
-  line-height: 138%;
+.option-1{
+  flex: 0 1 30%;
+  padding: 10px 0;
 }
 
 .button {
   background: #F5005B;
-  width: 15%;
+  width: 150px;
   border: solid;
   font-size: 100%;
   color: white;
@@ -260,6 +258,69 @@ span{
   .sign-in-info-box div{
     width: 100%;
   }
+
+  .order-1{
+    order: 1;
+    padding-bottom: 20px
+  }
+
+  .order-2{
+    order: 2;
+    padding-bottom: 80px;
+  }
+
+  .order-3{
+    order: 3;
+    padding-bottom: 20px
+  }
+
+  .order-4{
+    order: 4
+  }
+
+  .option-1{
+    flex: 0 1 50%;
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 544px){
+  .aye-1{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sign-in-info-box{
+    display: block;
+    height: 235px
+  }
+
+  .testing123{
+    display: block;
+  }
+
+  .select{
+    display: block
+  }
+
+  .order: 1;{
+  padding-bottom: 0px
+}
+
+.order-2{
+  order: 2;
+  padding-bottom: 0px;
+}
+
+.order-3{
+  order: 3;
+  padding-bottom: 0px
+}
+
+.order-4{
+  order: 4
+}
+
 }
 /************************** HOME ****************************/
 .index-title{
